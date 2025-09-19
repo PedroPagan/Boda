@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://PedroPagan.github.io/Boda",
+  "homepage": "https://pedropagan.github.io/Boda/",
 
   "scripts": {
     "dev": "vite",
