@@ -1,10 +1,13 @@
 import React from 'react'
 export default function FAQ(){
   const qas = [
-    {q: '¿Hay código de vestimenta?', a: 'Uniforme informal-elegante. Trae calzado cómodo para el baile.'},
-    {q: '¿Puedo llevar a niños?', a: 'La celebración es para mayores; por favor confirma si traes algún menor en el formulario RSVP.'},
-    {q: '¿Hay opciones vegetarianas?', a: 'Sí, tendremos menú con opción vegetariana. Indícalo en el RSVP.'},
-    {q: '¿Necesito imprimir la invitación?', a: 'No es necesario, pero trae tu DNI por si acaso.'}
+    {q: '¿Qué tengo que llevar?', a: 'La casa tiene piscina, por lo que llevad bañador, chanclas y toalla de piscina. A parte puede que refresque o llueva.'},
+    {q: '¿Tengo que llevar ropa de cama/toallas de ducha?', a: 'No, las habitaciones son habitaciones de hotel, con ropa de cama y toallas.'},
+    {q: '¿Cómo me visto?', a: 'No hay un codigo de vestimenta especifico, si podeis venir con camisa mejor, pero como esteis cómodos.'},
+    {q: '¿Puedo llevar a mi mascota?', a: 'No, el castillo no admite mascotas :(.'},
+    {q: '¿Puedo saltarme la ceremonia e ir sólo a comer el pastel?', a: 'Deberías.'},
+    {q: '¿Es necesario conjuntar la pajarita con los calcetines?', a: 'Es casi imprescindible excepto si llevas pajarita de madera, en cuyo caso puedes llevar zuecos.'},
+    {q: '¿Puedo ir vestido de blanco?', a: 'Solo los hombres pueden llevar traje blanco, en cuyo caso debe ir acompañado de cadenas de oro de 250 gr mínimo.'}
   ];
 
   return (
