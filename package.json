@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://ireneypere.site/",
+  "homepage": "https://www.ireneypere.site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
