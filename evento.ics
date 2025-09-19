@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:Boda de Irene y Pere
+DESCRIPTION:¡Nos casamos! Ven a celebrar con nosotros en el Castell de Sant Mori.
+LOCATION:Castell de Sant Mori, Calle Figueras, 2, 17467 Sant Mori, Gerona
+DTSTART:20260501T180000
+DTEND:20260503T120000
+END:VEVENT
+END:VCALENDAR
