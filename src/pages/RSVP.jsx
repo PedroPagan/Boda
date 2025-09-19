@@ -7,7 +7,7 @@ export default function RSVP() {
         Confirmar Asistencia
       </h2>
       <p className="mb-6 text-gray-700 text-center md:text-left max-w-2xl">
-        Por favor, rellena este formulario para confirmar tu asistencia a nuestra boda.
+        Por favor, rellena este formulario para confirmar tu asistencia a la boda.
       </p>
 
       <div className="w-full md:w-2/3 rounded-lg shadow-lg overflow-hidden">
