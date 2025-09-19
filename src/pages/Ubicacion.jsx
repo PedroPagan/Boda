@@ -1,6 +1,6 @@
 import React from 'react'
 export default function Ubicacion(){
-  const defaultEmbed = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.1234567890123!2d2.89234567890123!3d42.1234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab3456789abcdef%3A0x123456789abcdef!2sCastell%20de%20Sant%20Mori!5e0!3m2!1ses!2ses!4v1699999999999!5m2!1ses!2ses";
+  const defaultEmbed = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.828125913457!2d2.988238475782723!3d42.153964648097784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12baf3a691a475f7%3A0x2fe99a5ba5bf4017!2sCastell%20de%20Sant%20Mori!5e0!3m2!1sen!2ses!4v1758282997865!5m2!1sen!2ses";
   return (
     <section>
       <h2 className="text-xl font-bold">Ubicación y Cómo llegar</h2>

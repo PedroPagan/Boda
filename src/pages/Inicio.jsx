@@ -5,14 +5,15 @@ export default function Inicio(){
   title: "Boda de Irene y Pere",
   description: "¡Nos casamos! Ven a celebrar con nosotros en el Castell de Sant Mòri.",
   location: "Castell de Sant Mori, Calle Figueras, 2, 17467 Sant Mori, Gerona",
-  startDate: "2026-05-01T18:00:00", // ISO 8601
-  endDate: "2026-05-03T12:00:00"
+ startDateGoogle: "20260501T160000Z", // 18:00 hora local CEST -> 16:00 UTC
+  endDateGoogle: "20260503T100000Z", // 12:00 hora local CEST -> 10:00 UTC
+  startDateOutlook: "2026-05-01T18:00:00+02:00",
+  endDateOutlook: "2026-05-03T12:00:00+02:00",
+  icsFile: "/evento.ics"
 };
-  const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.startDate}/${event.endDate}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}&sf=true&output=xml`;
-
-  const outlookCalendarUrl = `https://outlook.office.com/owa/?path=/calendar/action/compose&subject=${encodeURIComponent(event.title)}&startdt=${event.startDate}&enddt=${event.endDate}&body=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}`;
-
-  const appleCalendarUrl = `/evento.ics`; // archivo ICS en public/
+  const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.startDateGoogle}/${event.endDateGoogle}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}&sf=true&output=xml`;
+  const outlookCalendarUrl = `https://outlook.office.com/owa/?path=/calendar/action/compose&subject=${encodeURIComponent(event.title)}&startdt=${event.startDateOutlook}&enddt=${event.endDateOutlook}&body=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}`;
+  const appleCalendarUrl = event.icsFile;
 
   return (
     <section>
