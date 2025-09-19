@@ -15,7 +15,7 @@ export default function Ubicacion(){
            <p className="text-sm text-gray-600 mt-2">Al pueblo no llega el tren y hasta donde sepamos ningún bus. Si venís en AVE, las paradas más cercanas son la de Gerona, a 30 min en coche y la de Figueres, a 25 min en coche. De ahí podéis alquilar un coche, coger un taxi o avisadnos con antelación para ver cuándo iros a recoger.</p>
           
           <h4 className="font-semibold mt-4">Otros</h4>
-          <p className="text-sm text-gray-600">En el pueblo no hay ningún supermercado, llevad todo lo que puedas necesitar, especialmente si no venís en coche.</p>
+          <p className="text-sm text-gray-600">En el pueblo no hay ningún supermercado, llevad todo lo que podais necesitar, especialmente si no venís en coche.</p>
         </div>
 
         <div>
