@@ -138,7 +138,7 @@ export default function Inicio() {
           href={outlookCalendarUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-yellow-400 text-black font-medium px-5 py-3 rounded-xl shadow-md hover:bg-blue-700 hover:scale-105 transition transform text-center"
+          className="bg-yellow-400 text-black font-medium px-5 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition transform text-center"
         >
           Añadir a Outlook
         </a>
@@ -146,7 +146,7 @@ export default function Inicio() {
         <a
           href={appleCalendarUrl}
           download
-          className="bg-yellow-400 text-black  font-medium px-5 py-3 rounded-xl shadow-md hover:bg-gray-900 hover:scale-105 transition transform text-center"
+          className="bg-yellow-400 text-black font-medium px-5 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition transform text-center"
         >
           Añadir a Apple Calendar
         </a>
