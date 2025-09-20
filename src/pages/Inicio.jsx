@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import foto1 from "../assets/foto1.jpg";
+import foto2 from "../assets/foto2.jpg";
+import foto3 from "../assets/foto3.jpg";
 
 export default function Inicio() {
   const eventDate = new Date("2026-05-02T12:30:00+02:00");
@@ -77,18 +80,18 @@ export default function Inicio() {
       {/* Galería de imágenes */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
         <img
-          alt="Foto pareja 1"
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
+          alt="Foto inicio"
+          src={foto1}
           className="rounded-lg shadow-sm object-cover h-48 w-full"
         />
         <img
-          alt="Foto pareja 2"
-          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop"
+          alt="Foto nutrias"
+          src={foto2}
           className="rounded-lg shadow-sm object-cover h-48 w-full"
         />
         <img
-          alt="Foto paisaje"
-          src="https://images.unsplash.com/photo-1488722796624-0aa6f1bb6399?q=80&w=800&auto=format&fit=crop"
+          alt="Foto fin"
+          src={foto3}
           className="rounded-lg shadow-sm object-cover h-48 w-full"
         />
       </div>
