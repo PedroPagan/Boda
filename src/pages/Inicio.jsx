@@ -98,26 +98,26 @@ export default function Inicio() {
         </p>
       </div>
 
-      {/* Contador regresivo */}
-      <div className="flex gap-4 mt-6 text-center text-gray-800 font-semibold text-xl md:text-2xl">
+      {/* Contador regresivo centrado */}
+      <div className="flex justify-center gap-6 mt-10 text-center font-serif text-gray-800 font-bold text-2xl md:text-3xl">
         <div>
-          <span className="block text-4xl md:text-5xl">{timeLeft.days}</span>
+          <span className="block text-5xl md:text-6xl">{timeLeft.days}</span>
           días
         </div>
         <div>
-          <span className="block text-4xl md:text-5xl">{timeLeft.hours}</span>
+          <span className="block text-5xl md:text-6xl">{timeLeft.hours}</span>
           horas
         </div>
         <div>
-          <span className="block text-4xl md:text-5xl">{timeLeft.minutes}</span>
+          <span className="block text-5xl md:text-6xl">{timeLeft.minutes}</span>
           min
         </div>
         <div>
-          <span className="block text-4xl md:text-5xl">{timeLeft.seconds}</span>
+          <span className="block text-5xl md:text-6xl">{timeLeft.seconds}</span>
           seg
         </div>
       </div>
-
+      
       {/* Botones de Calendario */}
       <div className="flex flex-col md:flex-row gap-4 mt-6">
         <a
@@ -133,7 +133,7 @@ export default function Inicio() {
           href={outlookCalendarUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-center"
+          className="bg-yellow-400 text-black px-4 py-2 rounded hover:opacity-90 transition text-center"
         >
           Añadir a Outlook
         </a>
@@ -141,7 +141,7 @@ export default function Inicio() {
         <a
           href={appleCalendarUrl}
           download
-          className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition text-center"
+          className="bg-yellow-400 text-black px-4 py-2 rounded hover:opacity-90 transition text-center"
         >
           Añadir a Apple Calendar
         </a>
