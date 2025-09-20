@@ -130,7 +130,7 @@ export default function Inicio() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3 }}
-              className="block text-6xl"
+              className="block text-5xl"
             >
               {timeLeft[unit]}
             </motion.span>
