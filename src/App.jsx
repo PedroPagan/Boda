@@ -4,6 +4,7 @@ import Inicio from './pages/Inicio';
 import Ubicacion from './pages/Ubicacion';
 import FAQ from './pages/FAQ';
 import RSVP from './pages/RSVP';
+import Elige from "./pages/Elige";
 
 
 export default function App() {
@@ -22,6 +23,7 @@ return (
 {page === 'ubicacion' && <Ubicacion />}
 {page === 'faq' && <FAQ />}
 {page === 'rsvp' && <RSVP />}
+{page === 'elige' && <Elige />}
 </main>
 </div>
 );

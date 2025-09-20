@@ -9,6 +9,7 @@ export default function Menu({ setPage, currentPage }) {
     { key: 'ubicacion', label: 'Ubicación' },
     { key: 'faq', label: 'Preguntas Frecuentes' },
     { key: 'rsvp', label: 'Confirmar Asistencia' },
+    { key: 'elige', label: 'Elige tu detalle' },
   ];
 
   return (
