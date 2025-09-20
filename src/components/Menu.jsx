@@ -38,7 +38,7 @@ export default function Menu({ setPage, currentPage }) {
                 setIsOpen(false);
               }}
               className={`text-left w-full p-3 rounded-xl font-medium transition
-                ${currentPage === item.key ? 'bg-yellow-400 text-black' : 'hover:bg-gray-100'}`}
+                ${currentPage === item.key ? 'bg-[#98fb98] text-black' : 'hover:bg-gray-100'}`}
             >
               {item.label}
             </button>

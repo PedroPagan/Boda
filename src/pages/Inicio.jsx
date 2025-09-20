@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Inicio() {
-  const eventDate = new Date("2026-05-01T18:00:00+02:00");
+  const eventDate = new Date("2026-05-02T12:30:00+02:00");
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -35,7 +35,7 @@ export default function Inicio() {
   const event = {
     title: "Boda de Irene y Pere",
     description:
-      "¡Nos casamos! Ven a celebrar con nosotros en el Castell de Sant Mòri.",
+      "¡Nos casamos! Ven a celebrar con nosotros en el Castell de Sant Mori.",
     location:
       "Castell de Sant Mori, Calle Figueras, 2, 17467 Sant Mori, Gerona",
     startDateGoogle: "20260501T160000Z", // 18:00 CEST -> 16:00 UTC
@@ -62,13 +62,17 @@ export default function Inicio() {
   const appleCalendarUrl = event.icsFile;
 
   return (
-    <section className="p-6">
-      <h2 className="text-xl font-bold">Bienvenidos</h2>
-      <p className="mt-3 text-gray-700">
-        Estamos encantados de que consideres acompañarnos en este día tan
-        especial. Aquí encontrarás información sobre la ceremonia, la ubicación,
-        preguntas frecuentes y el formulario RSVP para confirmar tu asistencia.
+   <section className="min-h-screen flex flex-col items-center justify-center p-6 text-center">
+      {/* Título grande */}
+      <h1 className="text-6xl md:text-7xl font-bold mb-6">Pere e Irene</h1>
+
+      {/* Invitación */}
+      <p className="text-xl md:text-2xl mb-8 max-w-3xl">
+        Tienen el placer de invitarles a su enlace matrimonial que se celebrará
+        el <strong>2 de mayo de 2026 a las doce y media</strong> en el
+        Castillo de Sant Mori (Gerona)
       </p>
+
 
       {/* Galería de imágenes */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -89,15 +93,30 @@ export default function Inicio() {
         />
       </div>
 
-      {/* Descripción */}
-      <div className="mt-6 bg-gray-50 p-4 rounded-lg">
-        <h3 className="font-semibold">Descripción</h3>
-        <p className="mt-2 text-gray-700">
-          La ceremonia tendrá lugar en una iglesia histórica, seguida de una
-          celebración íntima con familia y amigos. Hemos preparado indicaciones
-          y opciones de alojamiento en la sección "Ubicación".
-        </p>
-      </div>
+      
+      <section className="p-6 bg-gray-50 rounded-lg shadow-md max-w-2xl mx-auto mt-8">
+      <h2 className="text-2xl font-bold mb-4 text-center">Información de la boda</h2>
+
+      <ul className="list-disc list-inside space-y-3 text-lg">
+        <li>
+          <strong>Fecha:</strong> La boda tendrá lugar el <strong>2/5/26 a las 12:30</strong>, 
+          pero estáis invitados desde el <strong>1/5/26 a las 18</strong> hasta el <strong>3/5/26 a las 12</strong>.
+        </li>
+
+        <li>
+          <strong>Lugar:</strong> Castillo de Sant Mori, Calle Figueras, 2, 17467 Sant Mori, Gerona.  
+          (Hay más información en la pestaña <strong>Ubicación</strong>.)
+        </li>
+
+        <li>
+          <strong>Formularios a rellenar:</strong> Por favor, rellenad los formularios <strong>Confirmar asistencia</strong> y <strong>Elige tu detalle</strong> antes del <strong>30 de octubre</strong>.
+        </li>
+
+        <li>
+          <strong>Otra información:</strong> Encontraréis más detalles en el apartado <strong>Preguntas frecuentes</strong>, pero no dudéis en llamarnos si tenéis cualquier duda.
+        </li>
+      </ul>
+    </section>
 
       {/* Contador con animación */}
       <div className="flex justify-center gap-6 mt-10 text-center font-bold text-3xl md:text-4xl">
@@ -129,7 +148,7 @@ export default function Inicio() {
           href={googleCalendarUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-yellow-400 text-black font-medium px-5 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition transform text-center"
+          className="bg-[#FFF176] text-black font-medium px-5 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition transform text-center"
         >
           Añadir a Google Calendar
         </a>
@@ -138,7 +157,7 @@ export default function Inicio() {
           href={outlookCalendarUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-yellow-400 text-black font-medium px-5 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition transform text-center"
+          className="bg-[#FFF176] text-black font-medium px-5 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition transform text-center"
         >
           Añadir a Outlook
         </a>
@@ -146,7 +165,7 @@ export default function Inicio() {
         <a
           href={appleCalendarUrl}
           download
-          className="bg-yellow-400 text-black font-medium px-5 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition transform text-center"
+          className="bg-[#FFF176] text-black font-medium px-5 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition transform text-center"
         >
           Añadir a Apple Calendar
         </a>
