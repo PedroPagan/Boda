@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Inicio() {
   const eventDate = new Date("2026-05-01T18:00:00+02:00");
@@ -98,33 +99,37 @@ export default function Inicio() {
         </p>
       </div>
 
-      {/* Contador regresivo centrado */}
-      <div className="flex justify-center gap-6 mt-10 text-center font-serif text-gray-800 font-bold text-2xl md:text-3xl">
-        <div>
-          <span className="block text-5xl md:text-6xl">{timeLeft.days}</span>
-          días
-        </div>
-        <div>
-          <span className="block text-5xl md:text-6xl">{timeLeft.hours}</span>
-          horas
-        </div>
-        <div>
-          <span className="block text-5xl md:text-6xl">{timeLeft.minutes}</span>
-          min
-        </div>
-        <div>
-          <span className="block text-5xl md:text-6xl">{timeLeft.seconds}</span>
-          seg
-        </div>
+      {/* Contador con animación */}
+      <div className="flex justify-center gap-6 mt-10 text-center font-bold text-3xl md:text-4xl">
+        {["days", "hours", "minutes", "seconds"].map((unit) => (
+          <div key={unit}>
+            <motion.span
+              key={timeLeft[unit]} 
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              className="block text-6xl"
+            >
+              {timeLeft[unit]}
+            </motion.span>
+            {unit === "days"
+              ? "días"
+              : unit === "hours"
+              ? "horas"
+              : unit === "minutes"
+              ? "min"
+              : "seg"}
+          </div>
+        ))}
       </div>
       
-      {/* Botones de Calendario */}
-      <div className="flex flex-col md:flex-row gap-4 mt-6">
+       {/* Botones centrados */}
+      <div className="flex flex-col md:flex-row justify-center gap-4 mt-8">
         <a
           href={googleCalendarUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-yellow-400 text-black px-4 py-2 rounded hover:opacity-90 transition text-center"
+          className="bg-yellow-400 text-black font-medium px-5 py-3 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition transform text-center"
         >
           Añadir a Google Calendar
         </a>
@@ -133,7 +138,7 @@ export default function Inicio() {
           href={outlookCalendarUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-yellow-400 text-black px-4 py-2 rounded hover:opacity-90 transition text-center"
+          className="bg-yellow-400 text-black font-medium px-5 py-3 rounded-xl shadow-md hover:bg-blue-700 hover:scale-105 transition transform text-center"
         >
           Añadir a Outlook
         </a>
@@ -141,7 +146,7 @@ export default function Inicio() {
         <a
           href={appleCalendarUrl}
           download
-          className="bg-yellow-400 text-black px-4 py-2 rounded hover:opacity-90 transition text-center"
+          className="bg-yellow-400 text-black  font-medium px-5 py-3 rounded-xl shadow-md hover:bg-gray-900 hover:scale-105 transition transform text-center"
         >
           Añadir a Apple Calendar
         </a>
