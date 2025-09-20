@@ -4,7 +4,7 @@ export default function Elige() {
   return (
     <div className="p-4 md:p-8 flex flex-col items-center bg-gray-50 min-h-screen">
       <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-        Confirmar Asistencia
+        Elige tu detalle
       </h2>
       <p className="mb-6 text-gray-700 text-center md:text-left max-w-2xl">
         Por favor, rellena este formulario para elegir tu detalle. Si sois más de uno podeis repetirlo actualizando la página.
